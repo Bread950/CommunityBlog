@@ -1,7 +1,7 @@
 # CommunityPost
 
 # About
-This is a website where people can upload their own post and read post shared by other people. It has some basic features such as create, update, delete and read post, check personal and update personal information   
+This is a website where people can upload their own post and read post shared by other people. It has some basic features such as create, update, delete and read post, check and update personal information 
 
 # Usage
 ## 1. Login
