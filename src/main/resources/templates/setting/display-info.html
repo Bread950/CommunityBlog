@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en" 
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title></title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<h3>All of the posts</h3>
+	<hr>	
+  <!--    <form th:action="@{/employees/search}" class="form-inline">
+		<a th:href="@{/employees/showFormForAdd}"
+			class="btn btn-primary btn-sm mr-5 mb-3">
+			Add Employee
+		</a>	<input class="form-control  ml-5 mr-sm-2 mb-3" type="search" name="employeeName" placeholder="Search by name" /> 
+
+		<button class="btn btn-success mb-3" type="submit">Search</button>
+    </form>	
+	-->
+		<a th:href="@{/post/myPost}"  class="btn btn-danger btn-sm">
+								Your Post Info
+		</a>
+		
+	<table class="table table-bordered table-striped">
+					
+						
+		<thead class="thead-dark">
+			<tr>
+				<th>Display Name</th>
+				<th>Phone number</th>
+				<th>Email</th>
+				<th>Gender </th>	
+				<th>Action</th>			
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="accounts : ${theAccount}">
+			
+			    <td th:text="${accounts.displayName}" />	
+				<td th:text="${accounts.phoneNumber}" />	
+				<td th:text="${accounts.email}" />	
+				<td th:text="${accounts.gender}" id="gender"/>	
+				<td>
+							<a th:href="@{/setting/showFormForUpdate(accountId=${accounts.id})}"
+							   class="btn btn-info btn-sm">
+								Update
+							</a>
+							 </td>
+	
+			</tr>
+		</tbody>		
+	</table>
+ 
+	<script type="text/javascript">
+	
+    var x = document.getElementById("gender").innerHTML;
+    alert (x);
+	if (x==0)
+		{
+			document.getElementById("gender").innerHTML ="Male";
+		}
+	else
+		{
+			document.getElementById("gender").innerHTML ="Female";
+		}
+	
+	</script>
+	
+</div>
+	
+</body>
+</html>
