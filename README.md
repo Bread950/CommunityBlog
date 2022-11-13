@@ -1,9 +1,10 @@
 # CommunityPost
 
 # About
-This is a website where people can upload their own post and read post shared by other people. It has some basic features such as create, update, delete and read post, check and update personal information 
+- This is a website where people can upload their own post and read post shared by other people. It has some basic features such as create, update, delete and read post, check and update personal information 
+- I use Java core, Spring MVC, Spring JPA, MySQL Server, Spring Boot in this project
 
-# Usage
+# Screenshot
 ## 1. Login
 <img src="Image/Login.png" width="840"/>
 
