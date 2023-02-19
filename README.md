@@ -26,5 +26,14 @@
 ### 2.2 Check personal information 
 <img src="Image/DisplayPersonalInformation.png" width="840"/>
 
+
+
+
+
+
+
+
+
+
 ### 2.2.1 Update information
 <img src="Image/UpdateInfo.png" width="840"/>
