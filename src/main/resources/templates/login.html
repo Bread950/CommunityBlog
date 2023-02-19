@@ -20,9 +20,10 @@
 		<hr>
 	
 		<form th:action="@{/user/loginForm}"  th:object="${account}" method="GET">
-		
+
 			<!-- Add hidden form field to handle update -->
-			
+
+
 			<input type="text" th:field="*{userName}"
 					class="form-control mb-4 col-4" placeholder="Username">
 
@@ -33,6 +34,7 @@
 			<button type="submit" class="btn btn-info col-2">Login</button>
 						
 		</form>
+
 	</div>
 </body>
 
